@@ -57,7 +57,7 @@ while True:
 
 month_doomsday = months_doomsdays[month]  # special doomsday for specific month
 
-difference_to_doomsday = month_doomsday - day  # taking day, and finding difference to month doomsday
+difference_to_doomsday = day - month_doomsday  # taking day, and finding difference to month doomsday
 numerical_day_of_week = (difference_to_doomsday + doomsday) % 7  # getting into 0-6 form (days of week)
 
 actual_day_of_date = number_to_day[numerical_day_of_week]  # presenting day
